@@ -26,6 +26,8 @@ public class Game {
 	
 	private String platform;
 	
+	private Double score;
+	
 	private String imgUrl;
 	
 	private String shortDescription;
@@ -36,7 +38,7 @@ public class Game {
 		
 	}
 
-	public Game(Long id, String title, Integer year, String genre, String platform, String imgUrl,
+	public Game(Long id, String title, Integer year, String genre, String platform,Double score, String imgUrl,
 			String shortDescription, String longDescription) {
 		//super();
 		this.id = id;
@@ -44,6 +46,7 @@ public class Game {
 		this.year = year;
 		this.genre = genre;
 		this.platform = platform;
+		this.score=score;
 		this.imgUrl = imgUrl;
 		this.shortDescription = shortDescription;
 		this.longDescription = longDescription;
@@ -87,6 +90,14 @@ public class Game {
 
 	public void setPlatform(String platform) {
 		this.platform = platform;
+	}
+
+	public Double getScore() {
+		return score;
+	}
+
+	public void setScore(Double score) {
+		this.score = score;
 	}
 
 	public String getImgUrl() {
